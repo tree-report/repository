@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+    <meta charset="utf-8">
+    <title></title>
+    </head>
+<body onload="getdate">
+   <script>
+    function getdate(){
+    var dateinfo=new Date();
+    var thedate=dateinfo.toLocaleString();
+    document.getElementById("datebar").innerHTML =thedate;
+}
+    setInterval("getdate();",1000);
+
+   </script>
+   <div id="datebar">
+
+   </div>
+    </body>
+</html>
